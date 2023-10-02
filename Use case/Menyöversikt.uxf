@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLHierarchy</id>
+    <coordinates>
+      <x>187</x>
+      <y>0</y>
+      <w>594</w>
+      <h>1331</h>
+    </coordinates>
+    <panel_attributes>type=Package
+Start 
+	Liga
+		Kommande matcher
+			-&gt;Matchsida
+			-&gt;Odds
+		Tidigare matcher
+			-&gt;Matchsida
+		Statistik
+		Kalender
+			-&gt;Matchsida
+		Nyheter
+	Land
+		Kommande matcher
+			-&gt;Matchsida
+			-&gt;Odds
+		Lokala ligor
+			Pågående och kommande ligor
+				-&gt;Ligasida
+			Tidigare ligor
+				-&gt;Ligasida
+		Lokala lag
+			-&gt;Lagsida
+	Lag
+		Kommande matcher
+			-&gt;Matchsida
+			-&gt;Odds
+		Tidigare matcher
+			-&gt;Matchsida
+		Laguppställning
+			Spelarprofil 1
+			Spelarprofil ...
+			Spelarprofil 15
+		Statistik
+		Kalender
+			-&gt;Matchsida
+		Nyheter
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>814</x>
+      <y>22</y>
+      <w>253</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>Start
+--
+CN-Fakta/bildspel/animation
+--
+Välj sport
+-&gt;
+Välj Liga
+Välj Land
+Välj Lag
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>814</x>
+      <y>440</y>
+      <w>143</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>Kalender
+--
+Datum
+Arena
+Väder
+
+Matchsida-&gt;
+
+Odds?
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>814</x>
+      <y>220</y>
+      <w>154</w>
+      <h>187</h>
+    </coordinates>
+    <panel_attributes>Matchsida
+--
+Laguppställningar
+
+Lagsida-&gt;
+Spelarprofil-&gt;
+Ligasida-&gt;
+
+Om färdig: Resultat
+Annars: Odds&lt;-
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
