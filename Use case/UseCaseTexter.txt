@@ -24,7 +24,7 @@ Grundflöde:
 	På nästa meny väljer användaren undermenyn “Resultat”.
 	Användaren får se senaste resultaten för landets 5 senaste matcher i varje tillgänglig liga och kan här klicka in på matchen för att få närmare information.
 
-NAMN: Se resultat för liga
+NAMN: Se toppresultat för liga
 Aktörer: Användare
 Mål: Användaren ska kunna se matchresultat för sin valda ligas senaste matcher
 Förvillkor: Användaren ska ha tillgång till applikation på sin valda enhet. Applikationen ska ha statistik för vald sport och liga.
