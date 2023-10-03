@@ -1,0 +1,72 @@
+USE CASE 
+NAMN: Se kommande matcher för ett lag 
+Aktörer: Användare
+Mål: Användaren ska kunna se kommande matcher för sitt valda lag
+Förvillkor:  Användaren ska ha tillgång till applikation på sin valda enhet.
+Trigger: Användaren startar applikationen.
+Grundflöde: 
+	Användaren startar applikationen och läser fakta om Chuck Norris.
+	Användaren väljer sport=fotboll.
+	Användaren väljer lag=arsenal.
+	På nästa meny väljer användaren undermenyn “Kommande matcher”.
+	Användaren får se lagets 10 kommande matcher 
+	Om närmast kommande match är inom 1 dag, kan användaren se odds och förväntade startelvor.
+	Om användare trycker på en match öppnas informationsruta med detaljer om laguppställning, odds, motståndare.
+
+NAMN: Se resultat för land
+Aktörer: Användare
+Mål: Användaren ska kunna se matchresultat för sitt valda lands senaste matcher
+Förvillkor: Användaren ska ha tillgång till applikation på sin valda enhet.
+Trigger: Användaren startar applikationen.
+Grundflöde: 
+	Användaren startar applikationen och väljer sport.
+	I denna meny väljer användaren land.
+	På nästa meny väljer användaren undermenyn “Resultat”.
+	Användaren får se senaste resultaten för landets 5 senaste matcher i varje tillgänglig liga och kan här klicka in på matchen för att få närmare information.
+
+NAMN: Se resultat för liga
+Aktörer: Användare
+Mål: Användaren ska kunna se matchresultat för sin valda ligas senaste matcher
+Förvillkor: Användaren ska ha tillgång till applikation på sin valda enhet. Applikationen ska ha statistik för vald sport och liga.
+Trigger: Användaren väljer sitt lag i applikationen.
+Grundflöde: 
+	Användaren startar applikationen och läser CN-information
+	Användaren väljer sport=fotboll.
+	I denna meny väljer användaren liga.
+	På nästa meny väljer användaren undermenyn “Resultat”.
+	Användaren får se senaste resultaten för ligans omgång visas och kan här klicka in på vald match för att få närmare information.
+
+NAMN: Se resultat för ett lags senaste match
+Aktörer: Användare
+Mål: Användaren ska kunna se matchresultat för sitt valda lags senaste match
+Förvillkor: Användaren ska ha startat applikationen och valt sitt lag. 
+Trigger: Användaren väljer sitt lag i applikationen.
+Grundflöde: 
+	Användaren startar applikationen och väljer vilken sport (fotboll).
+	Användaren väljer “Lag” och vilket lag (
+	På nästa meny väljer användaren undermenyn “Resultat”. 
+	Användaren får se senaste resultaten för lagets 5 senaste matcher visas och vilka som spelade samt gjorde mål, skadade sig eller fick varningar. 
+
+
+NAMN: Se information om en spelare (statistik, aktiva år, skadehistorik) 
+Aktörer: Användare
+Mål: Användaren ska kunna se spelarprofiler för sitt valda lag
+Förvillkor: Användaren ska ha startat applikationen och valt sitt lag. 
+Trigger: Användaren väljer “se detaljer” i applikationen.
+Grundflöde: 
+	Användaren startar applikationen och väljer vilken sport.
+	Användaren väljer vilket lag.
+	I Hem-menyn klickar användaren på “Spelare”
+	Användaren får se senaste resultaten för spelarens placering, skadehistorik, statistik, aktiva år.
+
+NAMN: Se väder för specifik match
+Aktörer: Användare
+Mål: Användaren ska kunna se väderprognosen för vald match
+Förvillkor: Användaren ska ha startat applikationen och valt sin sport, liga eller lag. 
+Trigger: Användaren väljer en match i applikationen.
+Grundflöde: 
+	Användaren startar applikationen och väljer sport.
+	Användaren väljer land, liga eller lag.
+	Användaren blir dirigerad till kalendern. 
+	I kalendern kan användaren välja en match som är av intresse. 
+	Efter vald match kan användaren se väderprognosen för matchdagen.
